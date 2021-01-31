@@ -86,3 +86,17 @@ if ((which curl) -and (which vim) -and (which rake) -and (which bash)) {
     curl.exe -L https://bit.ly/janus-bootstrap | bash
 }
 
+# Custom apps
+choco install adobe-creative-cloud          --limit-output
+choco install spotify                       --limit-output
+choco install greenshot                     --limit-output
+choco install google-drive-file-stream      --limit-output
+choco install dropbox --pre                 --limit-output
+choco install slack                         --limit-output
+choco install figma                         --limit-output
+choco install file-converter                --limit-output
+choco install skype                         --limit-output
+# choco install office365business --forcex86 --params="/productid:O365HomePremRetail" /exclude:"Access Groove Lync OneDrive OneNote Outlook Publisher" 
+
+# Download installers not in Chocolatey
+Invoke-WebRequest 'https://app.hubstaff.com/download/windows' -OutFile '~/Downloads/hubstaff.exe'

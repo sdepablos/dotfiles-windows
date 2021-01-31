@@ -33,6 +33,8 @@ To install these dotfiles from PowerShell without Git:
 iex ((new-object net.webclient).DownloadString('https://raw.github.com/sdepablos/dotfiles-windows/master/setup/install.ps1'))
 ```
 
+This will create a directory inside your `C:\Users\$User\Documents\WindowsPowerShell`
+
 To update later on, just run that command again.
 
 ### Add custom commands without creating a new fork
