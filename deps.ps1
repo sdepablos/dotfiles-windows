@@ -87,7 +87,6 @@ if ((which curl) -and (which vim) -and (which rake) -and (which bash)) {
 }
 
 # Custom apps
-choco install adobe-creative-cloud          --limit-output
 choco install spotify                       --limit-output
 choco install greenshot                     --limit-output
 choco install google-drive-file-stream      --limit-output
@@ -95,8 +94,16 @@ choco install dropbox --pre                 --limit-output
 choco install slack                         --limit-output
 choco install figma                         --limit-output
 choco install file-converter                --limit-output
-choco install skype                         --limit-output
-# choco install office365business --forcex86 --params="/productid:O365HomePremRetail" /exclude:"Access Groove Lync OneDrive OneNote Outlook Publisher" 
+choco install sublimetext3                  --limit-output
+choco install vscode                        --limit-output
+choco install office365business --forcex86 --params="/exclude:'Access Groove Lync OneDrive OneNote Outlook Publisher'"
+choco install adobe-creative-cloud          --limit-output
+
+# fonts
+# backgrounds
 
 # Download installers not in Chocolatey
-Invoke-WebRequest 'https://app.hubstaff.com/download/windows' -OutFile '~/Downloads/hubstaff.exe'
+New-Item -Path '~/Downloads' -Name 'install' -ItemType 'directory'
+
+Invoke-WebRequest 'https://app.hubstaff.com/download/windows' -OutFile '~/Downloads/install/hubstaff.exe'
+Invoke-WebRequest 'https://cdn.wacom.com/u/productsupport/drivers/win/professional/WacomTablet_6.3.42-2.exe' -OutFile '~Downloads/install/WacomTablet_6.3.42-2.exe'
