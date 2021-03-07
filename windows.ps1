@@ -636,7 +636,7 @@ Set-ItemProperty $_ "ColorTable15"         $(Convert-ConsoleColor "#e8e8d3") # W
 
 # Customizing PoSh syntax
 # Theme: Jellybeans
-Set-PSReadlineOption -Colors @{
+Set-PSReadLineOption -Colors @{
     "Default"   = "#e8e8d3"
     "Comment"   = "#888888"
     "Keyword"   = "#8197bf"
