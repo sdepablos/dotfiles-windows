@@ -98,6 +98,10 @@ choco install sublimetext3                  --limit-output
 choco install vscode                        --limit-output
 choco install office365business --forcex86 --params="/exclude:'Access Groove Lync OneDrive OneNote Outlook Publisher'"
 choco install adobe-creative-cloud          --limit-output
+choco install 7zip.install                  --limit-output
+choco install vlc                           --limit-output
+choco install steam                         --limit-output
+
 
 # fonts
 # backgrounds
